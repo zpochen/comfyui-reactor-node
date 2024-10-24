@@ -26,7 +26,7 @@ models_dir_path = os.path.join(models_dir, "insightface")
 model_path = os.path.join(models_dir_path, model_name)
 
 def run_pip(*args):
-    subprocess.run([sys.executable, "-m", "pip", "install", "--no-warn-script-location", *args])
+    subprocess.run([sys.executable, "-m", "pip3", "install", "--no-warn-script-location", *args])
 
 def is_installed (
         package: str, version: str = None, strict: bool = True
